@@ -3,11 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sade - Smooth Operator</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #0a0a0a;
+            --ruby: #9b111e;
+            --text-gray: #ccc;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-gray);
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .player-container {
+            max-width: 600px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 40px;
+            background: linear-gradient(145deg, #111, #050505);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: var(--gold);
+            font-weight: normal;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: var(--ruby);
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+        }
+
+        .lyrics {
+            height: 400px;
+            overflow-y: auto;
+            padding-right: 15px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--gold) transparent;
+        }
+
+        /* Estilização da barra de rolagem para Chrome/Edge */
+        .lyrics::-webkit-scrollbar {
+            width: 4px;
+        }
+        .lyrics::-webkit-scrollbar-thumb {
+            background-color: var(--gold);
+        }
+
+        p {
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: white;
+        }
+
+        .chorus {
+            color: var(--gold);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .highlight {
+            color: var(--gold);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--gold);
+            width: 50px;
+            margin: 30px auto;
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Beatriz</h1>
-    <h2>aluna</h2>
+
+    <div class="player-container">
+        <h1>Smooth Operator</h1>
+        <div class="subtitle">Sade | Diamond Life</div>
+
+        <div class="lyrics">
+            <p>
+                He's laughing with another girl<br>
+                And playing with another heart<br>
+                Placing high stakes making hearts ache<br>
+                He's loved in seven languages<br>
+                Diamond nights and ruby lights high in the sky<br>
+                Heaven help him when he falls
+            </p>
+
+            <p class="highlight">
+                Diamond life, lover boy<br>
+                We move in space with minimum waste and maximum joy<br>
+                City lights and business nights<br>
+                When you require streetcar desire for higher heights
+            </p>
+
+            <p>
+                No place for beginners or sensitive hearts<br>
+                When sentiment is left to chance<br>
+                No place to be ending but somewhere to start
+            </p>
+
+            <p>
+                No need to ask<br>
+                <span class="chorus">He's a smooth operator<br>
+                Smooth operator<br>
+                Smooth operator<br>
+                Smooth operator</span>
+            </p>
+
+            <p>
+                Coast to coast, LA to Chicago, western male<br>
+                Across the north and south, to Key Largo, love for sale
+            </p>
+
+            <p>
+                Face to face, each classic case<br>
+                We shadow box and double cross<br>
+                Yet need the chase
+            </p>
+
+            <p>
+                A license to love, insurance to hold<br>
+                Melts all your memories and change into gold<br>
+                His eyes are like angels but his heart is cold
+            </p>
+
+            <p>
+                No need to ask<br>
+                <span class="chorus">He's a smooth operator<br>
+                Smooth operator<br>
+                Smooth operator<br>
+                Smooth operator</span>
+            </p>
+
+            <p>
+                Coast to coast, LA to Chicago, western male<br>
+                Across the north and south, to Key Largo, love for sale
+            </p>
+
+            <hr>
+
+            <p class="chorus">
+                Smooth operator...<br>
+                (Repeat to fade)
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
